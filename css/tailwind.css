@@ -1,0 +1,6 @@
+/* this is a tailwind directive with parameter of base */
+@tailwind base;
+/* these markers will be replaced with css by the postcss javascript compiler */
+/* will replace with all base, component and utility css classes */
+@tailwind components;
+@tailwind utilities;

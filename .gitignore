@@ -1,0 +1,5 @@
+# ignore compiled css
+/public/build/tailwind.css
+
+# ignore node_modules 
+/node_modules
