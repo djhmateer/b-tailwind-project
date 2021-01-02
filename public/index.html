@@ -1,11 +1,23 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/build/tailwind.css">
 </head>
-<body>
-    <h1 class="text-4xl font-bold text-center text-blue-500">Hello world B2!</h1>
+
+<!-- bg is background, 100 is always the lightest -->
+<body class="bg-gray-100">
+  <!-- p is padding, 0 to 64 -->
+  <!-- px is horizontal ie from the left, py is vertical from the top -->
+  <div class="px-8 py-12">
+    <!-- height of image -->
+    <img class="h-10" src="img/logo.svg" alt="Workation">
+    <!-- margin top of big image -->
+    <!-- rounded -->
+    <img class="mt-6 rounded-lg shadow-xl" src="img/beach-work.jpg" alt="Woman workcation">
+  </div>
 </body>
+
 </html>
