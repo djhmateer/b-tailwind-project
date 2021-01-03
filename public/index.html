@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/build/tailwind.css">
 </head>
 
-<!-- bg is background, 100 is always the lightest -->
+<!-- bg is background, 100 is always the lightest. A Utility Class -->
 <body class="bg-gray-100">
   <!-- p is padding, 0 to 64 -->
   <!-- px is horizontal ie from the left, py is vertical from the top -->
@@ -15,8 +15,34 @@
     <!-- height of image -->
     <img class="h-10" src="img/logo.svg" alt="Workation">
     <!-- margin top of big image -->
-    <!-- rounded -->
-    <img class="mt-6 rounded-lg shadow-xl" src="img/beach-work.jpg" alt="Woman workcation">
+    <!-- rounded border radius and shadow -->
+    <img class="mt-6 rounded-lg shadow-xl" src="img/beach-work.jpg" alt="Woman workcationing on the beach">
+
+    <!-- margin top of the text-->
+    <!-- text size -->
+    <!-- font weight -->
+    <!-- font colour - usually don't use pure black -->
+    <!-- leading (line height) -->
+    <h1 class="mt-6 text-2xl font-bold text-gray-900 leading-tight">
+      You can work from anywhere.
+      <span class="text-indigo-500">Take advantage of it.</span>
+    </h1>
+
+    <p class="mt-2 text-gray-600">
+      Workation helps you find work-friendly rentals in beautiful locations so can you enjoy some nice weather even when
+      you are not on vacation
+    </p>
+
+    <div class="mt-4">
+      <!-- we're not submitting a form so don't need a 'button'-->
+      <!-- links are inline elements by default so can' add padding to them properly, 
+      so need inline-block -->
+
+      <!-- tracking is typographical term for letter spacing -->
+      <a href="#"
+        class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-500 text-white uppercase tracking-wider font-semibold text-sm">Book
+        your escape</a>
+    </div>
   </div>
 </body>
 
