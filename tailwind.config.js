@@ -2,7 +2,11 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'brand-blue': '#1992d4', // adding a new colour
+      }
+    },
   },
   variants: {
     // order of variants matters
