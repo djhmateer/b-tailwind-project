@@ -5,6 +5,8 @@ module.exports = {
     extend: {},
   },
   variants: {
+    // order of variants matters
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
     extend: {},
   },
   plugins: [],

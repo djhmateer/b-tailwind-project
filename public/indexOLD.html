@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/build/tailwind.css">
+</head>
+
+<!-- bg is background, 100 is always the lightest. A Utility Class -->
+
+<body class="bg-gray-300">
+
+  <!-- this is neat so can see where the flex box ends-->
+  <div class="bg-gray-100 flex">
+    <!-- p is padding, 0 to 64 -->
+    <!-- px is horizontal ie from the left, py is vertical from the top -->
+    <!-- this div container encompasses the whole thing-->
+
+    <!-- could do a max width of md (medium) to constrain the size-->
+    <!-- then an mx of auto to centre -->
+    <!-- on small screen -->
+    <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">
+      <!-- height of image -->
+      <img class="h-10" src="img/logo.svg" alt="Workation">
+      <!-- margin top of big image -->
+      <!-- rounded border radius and shadow -->
+      <!-- on small make wider, the image -->
+      <img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden"
+        src="img/beach-work.jpg" alt="Woman workcationing on the beach">
+
+      <!-- margin top of the text-->
+      <!-- text size -->
+      <!-- font weight -->
+      <!-- font colour - usually don't use pure black -->
+      <!-- leading (line height) -->
+      <h1 class="mt-6 text-2xl font-bold text-gray-900 leading-tight sm:mt-8 sm:text-4xl">
+        You can work from anywhere.
+        <span class="text-indigo-500">Take advantage of it.</span>
+      </h1>
+
+      <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
+        Workation helps you find work-friendly rentals in beautiful locations so can you enjoy some nice weather even
+        when
+        you are not on vacation
+      </p>
+
+      <div class="mt-4 sm:mt-6">
+        <!-- we're not submitting a form so don't need a 'button'-->
+        <!-- links are inline elements by default so can' add padding to them properly, 
+      so need inline-block -->
+
+        <!-- tracking is typographical term for letter spacing -->
+        <a href="#"
+          class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-500 text-white uppercase tracking-wider font-semibold text-sm sm:text-base">Book
+          your escape</a>
+      </div>
+
+      <!-- container just for > lg-->
+      <div class="hidden lg:block lg:w-1/2 lg:relative">
+        <p>Hello</p>
+        <img class="absolute inset-0 h-full w-full object-cover object-center"  
+        src="img/beach-work.jpg" alt="Woman workcationing on the beach">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

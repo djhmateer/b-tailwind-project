@@ -1,5 +1,6 @@
 {
     "liveServer.settings.root": "/public",
     "appService.defaultWebAppToDeploy": "/subscriptions/d191dc88-8947-4ace-81b4-36b332cd868c/resourceGroups/MyTailwindProjectTEST/providers/Microsoft.Web/sites/mytailwindproject",
-    "appService.deploySubpath": "public"
+    "appService.deploySubpath": "public",
+    "liveServer.settings.port": 5501
 }
