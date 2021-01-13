@@ -5,8 +5,8 @@ module.exports = {
         // export NODE_ENV=production
         // export NODE_ENV=development
         // minification
-        require('cssnano')({
-            preset: 'default',
-          }),
+        // require('cssnano')({
+        //     preset: 'default',
+        //   }),
     ]
 }

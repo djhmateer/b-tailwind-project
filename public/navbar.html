@@ -4,46 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" href="/build/tailwind.css">
 </head>
 
 <body>
     <!-- items-center is all about vertical aligment -->
     <!-- px and py are padding to give neight and depth to the navbar-->
-    <header class="bg-gray-900">
-        <div class="flex items-center justify-between px-4 py-3">
-            <!-- stuff on the left -->
+    <!-- items-center is vertical aligment-->
+    <header class="bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+        <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+            <!-- logo on the left -->
             <div>
                 <img class="h-8" src="/img/logo-inverted.svg" alt="Workation">
             </div>
 
             <!-- stuff on the right eg hamburger-->
-            <!-- currently this is defaulting to open-->
-            <div>
+            <!-- hide on small and above ie > 640px -->
+            <div class="sm:hidden">
                 <div type="button" onclick="toggleMenu()"
                     class="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
-                    <!-- hamburger 3 line icon defaulting to hidden -->
-                    <svg class="toggle hidden h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <!-- hamburger 3 line icon defaulting to hidden -->
+                        <path class="toggle" fill-rule="evenodd"
                             d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
-                    </svg>
-                    <!-- x -->
-                    <svg class="toggle h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
+                        <!-- x -->
+                        <path class="toggle hidden" fill-rule="evenodd"
                             d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
                     </svg>
-
                 </div>
             </div>
         </div>
 
         <!-- insted of py-4 (which does top and bottom padding) we specify manually -->
-        <nav class="toggle px-2 pt-2 pb-4">
+        <!-- when > 640 ie sm, override hidden class with block.. and now flex (with default of inline) -->
+        <nav class="toggle hidden px-2 pt-2 pb-4 sm:flex sm:p-0">
             <!-- mt is margin top to give a bit of space between elements -->
             <!-- nice hover gray background with rounded -->
-            <a href="#" class="block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded ">List your property</a>
-            <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded ">Trips</a>
-            <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded ">Messages</a>
+            <a href="#" class="block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded ">List your
+                property</a>
+            <!-- mt - margin top-->
+            <!-- ml - margin left-->
+            <a href="#"
+                class="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded sm:mt-0 sm:ml-2">Trips</a>
+            <a href="#"
+                class="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded sm:mt-0 sm:ml-2">Messages</a>
         </nav>
     </header>
 
